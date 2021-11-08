@@ -1,33 +1,27 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Navbar, Nav } from "react-bootstrap"
+import { Link } from "gatsby";
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header className="bg-light">
+    <Container>
+      <Navbar expand="md" bg="light" variant="light">
+        <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarRsponsive" />
+        <Navbar.Collapse id="navbarRsponsive" className="justify-content-end">
+          <Nav as="ul">
+            <Nav.Item as="li">
+              <Link to="/page-2" className="nav-link" activeClassName="active">Page 2</Link>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <Link to="/using-ssr" className="nav-link" activeClassName="active">Using SSR</Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
   </header>
 )
 

@@ -1,0 +1,43 @@
+/* // Small devices (landscape phones, 576 and up */
+
+.container {
+    color: inherit;
+}
+
+@media (max-width: 575px) {
+    .container {
+        background-color: rgb(50, 50, 50);
+        color: white;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        background-color: rgb(125, 125, 125);
+        color: white;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up */
+@media (min-width: 768px) {
+    .container {
+        background-color: rgb(150, 150, 150);
+        color: black;
+    }
+}
+
+/* // Large devices (large desktops, 992px and up */
+@media (min-width: 992px) {
+    .container {
+        background-color: rgb(175, 175, 175);
+        color: black;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up */
+@media (min-width: 1200px) {
+    .container {
+        background-color: rgb(200, 200, 200);
+        color: black;
+    }
+}
