@@ -7,13 +7,15 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container } from "react-bootstrap"
+import { Container, Row, Col, Card, Image } from "react-bootstrap"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Container>
-      <h1>Lorem Ipsum</h1>
+      <Row>
+        
+      </Row>
     </Container>
     
   </Layout>
