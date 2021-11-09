@@ -1,22 +1,29 @@
 import * as React from "react"
-import '../CSS/custom.css'
+// import '../css/custom.css'
 // import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
+import { 
+  // Container,
+  Trips, 
+  Hero,
+  Section
+} from "../components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col, Card, Image } from "react-bootstrap"
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import { Container, Row, Col, Card, Image } from "react-bootstrap"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Container>
+    {/* <Container>
+      <Hero />
       <Row>
         
       </Row>
-    </Container>
+    </Container> */}
     
   </Layout>
 )
