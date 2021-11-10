@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../components/Custom.scss'
+import '../components/customVariables.scss'
 import { Container, Row, Col, Card, Button, Image } from "react-bootstrap"
 
 import bigWheel from "../assets/images/img-5.jpg"
